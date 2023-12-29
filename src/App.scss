@@ -1,0 +1,30 @@
+* {
+  font-family: Inter, sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; // Asegúrate de que nada se desborde del contenedor de la celda
+  border-radius: 20px;
+}
+
+.grid-item img {
+  width: 100%; // Ajusta la imagen al 100% de la anchura de su contenedor
+  height: 100%; // Ajusta la imagen al 100% de la altura de su contenedor
+  object-fit: cover; // Asegura que la imagen cubra toda el área de la celda
+  object-position: center; // Centra la imagen dentro de la celda
+}
