@@ -13,11 +13,14 @@ function App() {
       <div className="grid-item" style={{ gridColumnStart: "2", gridColumnEnd: "4" }}>
         <img src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
       </div>
-      <div className="grid-item" style={{ background: "cyan", gridColumnStart: "4" }}>
-        <h1>Hello 👋</h1>
-        <p>
-          Poulos Collective is a design consultancy that specializes in visual design and ux strategy for design
-          systems, mobile applications and desktop platforms.
+      <div
+        className="grid-item"
+        style={{ background: "white", gridColumnStart: "4", paddingLeft: "50px", paddingRight: "50px" }}
+      >
+        <h1 style={{ fontWeight: "bolder" }}>Hello 👋</h1>
+        <p style={{ margin: "0px", fontWeight: "100" }}>
+          I'm Emiliano, a Senior Developer with 4 years in full-stack, UX/UI, and diverse tech platforms, delivering
+          seamless user experiences.
         </p>
       </div>
       <div className="grid-item" style={{ background: "gray", gridColumnStart: "2", gridRowStart: "2" }}></div>
