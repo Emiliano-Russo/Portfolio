@@ -31,3 +31,73 @@ body {
   object-fit: cover; // Asegura que la imagen cubra toda el área de la celda
   object-position: center; // Centra la imagen dentro de la celda
 }
+
+// items
+
+#item1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: "red";
+}
+
+#item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: white;
+}
+
+#item3 {
+  background: white;
+  grid-column-start: 4;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  h1 {
+    font-weight: bolder;
+  }
+
+  p {
+    margin: 0px;
+    font-weight: 100;
+  }
+}
+
+#item4 {
+  background: gray;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#item5 {
+  background: green;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+//floating
+.icon-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon-container img {
+  // animation: float 10s linear infinite;
+  margin: 10px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Y así sucesivamente para cada icono */
