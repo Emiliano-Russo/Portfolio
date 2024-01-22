@@ -4,6 +4,27 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #007bff; // Cambia esto por el color que prefieras
+  text-decoration: none; // Elimina el subrayado
+  font-weight: 500; // Ajusta el peso del texto según tus preferencias
+
+  &:hover {
+    color: #0056b3; // Cambia el color al pasar el ratón por encima
+    text-decoration: underline; // Añade un subrayado al pasar el ratón por encima
+  }
+
+  &:visited {
+    color: #5a5a5a; // Color para enlaces visitados
+  }
+
+  &:active {
+    color: #002766; // Color al hacer clic en el enlace
+  }
+
+  transition: color 0.3s ease-in-out; // Suaviza el cambio de color
+}
+
 body {
   padding: 20px;
   background: whitesmoke;
@@ -23,6 +44,7 @@ body {
   justify-content: center;
   overflow: hidden; // Asegúrate de que nada se desborde del contenedor de la celda
   border-radius: 20px;
+  opacity: 0;
 }
 
 .grid-item img {
@@ -64,17 +86,66 @@ body {
 }
 
 #item4 {
-  background: gray;
+  background: white;
   grid-column-start: 2;
   grid-row-start: 2;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 15px;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #6a9cff; // Un color que combine con tu esquema
+      }
+    }
+  }
 }
 
 #item5 {
-  background: green;
+  background: white;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 4;
+}
+
+#item6 {
+  background: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  overflow: hidden; // Evita que los contenidos se desborden
+  position: relative;
+
+  .hobby {
+    border: 1px solid black;
+    position: absolute;
+  }
 }
 
 //floating
@@ -100,4 +171,47 @@ body {
   }
 }
 
-/* Y así sucesivamente para cada icono */
+@keyframes leftToRightAnim {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightToLeftAnim {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes topToBottomAnim {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.leftToRight {
+  opacity: 0;
+  animation: leftToRightAnim 1.5s ease forwards;
+}
+
+.rightToLeft {
+  opacity: 0;
+  animation: rightToLeftAnim 1.5s ease forwards;
+}
+
+.topToBottom {
+  opacity: 0;
+  animation: topToBottomAnim 1.5s ease forwards;
+}
