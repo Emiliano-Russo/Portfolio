@@ -119,7 +119,7 @@ function App() {
         <h1
           style={{
             color: "transparent",
-            background: "linear-gradient(to right, #c38910, #fffbbb)",
+            background: "linear-gradient(to right, #fffbbb, #c38910)",
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             position: "absolute",
