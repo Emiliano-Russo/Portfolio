@@ -94,34 +94,13 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: center;
+}
 
-  h2 {
-    margin: 0;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-
-    li {
-      font-size: 15px;
-      margin-bottom: 10px;
-      position: relative;
-      padding-left: 30px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #6a9cff; // Un color que combine con tu esquema
-      }
-    }
-  }
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 #item5 {
@@ -133,6 +112,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .experience-card {
@@ -195,10 +175,23 @@ body {
   position: relative;
   overflow: hidden; // Evita que los contenidos se desborden
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 
-  .hobby {
-    border: 1px solid black;
+  h1 {
+    color: transparent;
+    background: linear-gradient(to right, #403f37, #6ac8ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  img {
     position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
   }
 }
 
