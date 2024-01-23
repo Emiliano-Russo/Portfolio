@@ -8,6 +8,7 @@ import { Item3 } from "./components/Item3/Item3";
 import { Item4 } from "./components/Item4/Item4";
 import { Item5 } from "./components/Item5/Item5";
 import { Item6 } from "./components/Item6/Item6";
+import { Item7 } from "./components/Item7/Item7";
 
 function App() {
   const ref = useRef(null);
@@ -21,19 +22,20 @@ function App() {
           }
         });
       },
-      {
-        threshold: 0.5, // Ajusta según la cantidad de elemento que debe estar visible para activar la animación
-      }
+      { threshold: 0.5 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    // Selecciona todos los elementos que quieres observar
+    const elements = document.querySelectorAll(".grid-item");
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      elements.forEach((element) => {
+        observer.unobserve(element);
+      });
     };
   }, []);
 
@@ -45,6 +47,7 @@ function App() {
       <Item4 />
       <Item5 ref={ref} />
       <Item6 ref={ref} />
+      <Item7 ref={ref} />
     </div>
   );
 }
