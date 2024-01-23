@@ -131,69 +131,6 @@ body {
   padding-left: 20px;
 }
 
-#item5 {
-  background: white;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.experience-card {
-  border: 1px solid #e0e0e0;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 80%;
-}
-
-.experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.experience-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.job-title {
-  margin: 0;
-  color: #333;
-  font-size: 18px;
-}
-
-.experience-period {
-  background-color: #f2f2f2;
-  color: #666;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 14px;
-}
-
-.company-name {
-  color: #555;
-  font-size: 16px;
-}
-
-.work-experience-title {
-  font-size: 24px; /* Tamaño del texto */
-  color: #333; /* Color del texto */
-  margin-bottom: 20px; /* Espacio debajo del título */
-  padding-left: 20px; /* Espaciado a la izquierda para alinearlo con las tarjetas */
-}
-
 #item6 {
   background: white;
   grid-column-start: 1;
