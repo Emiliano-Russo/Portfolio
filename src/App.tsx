@@ -1,6 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import "./App.scss";
 import { FloatingIcons } from "./components/FloatingIcons/FloatingIcons";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 3000, // Una transición más lenta
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0, // Cambio inmediato
+  cssEase: "linear",
+};
 
 const urlForest = "https://i.pinimg.com/564x/e7/04/56/e7045643b35fba6754bf68e0dcae3bb0.jpg";
 const myphoto = require("./assets/me1.jpg");
@@ -98,22 +111,23 @@ function App() {
         className="grid-item"
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           alignItems: "center",
           height: "100%",
         }}
       >
-        {/* <h1
+        <h1
           style={{
             color: "transparent",
-            background: "linear-gradient(to right,red, blue)",
+            background: "linear-gradient(to right, #c38910, #fffbbb)",
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             position: "absolute",
+            marginLeft: "20px",
           }}
         >
           Hobbies
-        </h1> */}
+        </h1>
         <img src={hobbies} />
       </div>
     </div>
