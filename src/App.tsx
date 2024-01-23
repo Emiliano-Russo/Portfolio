@@ -4,6 +4,7 @@ import { FloatingIcons } from "./components/FloatingIcons/FloatingIcons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { ExperienceCard } from "./components/ExperienceCard/ExperienceCard";
 const settings = {
   dots: false,
   infinite: true,
@@ -103,7 +104,11 @@ function App() {
         </ul>
       </div>
       <div ref={ref} id="item5" className="grid-item rightToLeft">
-        <img src={experience} />
+        <h2 className="work-experience-title">Work Experience</h2>
+        <ExperienceCard jobTitle="Freelancer" company="Upwork" period="2019-2020" />
+        <ExperienceCard jobTitle="Full Stack Developer" company="Globaluy" period="2020-2023" />
+        <ExperienceCard jobTitle="Software Engineer III" company="Cencosud" period="2023-2024" />
+        <ExperienceCard jobTitle="Entrepreneur" company="Application Development" period="2024-Now" />
       </div>
       <div
         ref={ref}
