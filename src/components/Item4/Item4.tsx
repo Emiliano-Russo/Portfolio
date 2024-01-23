@@ -1,24 +1,21 @@
-import { EducationCard } from "../EducationCard/EducationCard";
-
-const systemAnalystCertificate = require("../../assets/Escolaridad.pdf");
-
 export const Item4 = () => {
   return (
     <div id="item4" className="grid-item leftToRight">
-      <h2 className="section-title">Education</h2>
-      <div className="education-container">
-        <EducationCard title="System Analyst" link={systemAnalystCertificate} description="ORT University" />
-        <EducationCard
-          title="React The Complete Guide"
-          link={"https://www.udemy.com/certificate/UC-9b399380-d1f3-445b-9dbc-8bb3fc47be0a/"}
-          description="Udemy"
-        />
-        <EducationCard
-          title="AWS Certified Cloud Practitioner"
-          link={"https://www.udemy.com/certificate/UC-f21c3636-4658-4351-b2b6-2c467598e500/"}
-          description="Udemy"
-        />
-        {/* ... Agrega más EducationCards aquí ... */}
+      <div className="social-icons">
+        <a
+          href="https://www.linkedin.com/in/russo-emiliano/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+        >
+          <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" />
+        </a>
+        <a href="https://github.com/Emiliano-Russo" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <img src="https://img.icons8.com/material-outlined/96/github.png" alt="github" />
+        </a>
+        <a href="mailto:russo.emiliano97@gmail.com" className="social-icon">
+          <img src="https://img.icons8.com/ios/100/new-post--v1.png" alt="email" />
+        </a>
       </div>
     </div>
   );

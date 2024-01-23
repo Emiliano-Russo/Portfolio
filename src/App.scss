@@ -92,8 +92,36 @@ body {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  align-items: start;
+  align-items: center; /* Centrar los elementos horizontalmente */
   justify-content: center;
+}
+
+#item4 h2 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centra los íconos horizontalmente */
+  gap: 20px; /* Espacio entre los íconos */
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ancho del ícono */
+  height: 50px; /* Altura del ícono */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.social-icon img {
+  width: 100%; /* Ajusta la imagen al 100% de la anchura del contenedor */
+  height: 100%; /* Ajusta la imagen al 100% de la altura del contenedor */
 }
 
 .section-title {
