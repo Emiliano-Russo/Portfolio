@@ -1,0 +1,40 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.education-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-title {
+  color: #007bff;
+  margin: 0 0 10px 0;
+  font-size: 11px;
+}
+
+.education-link {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.education-link:hover {
+  color: #0056b3;
+}
+
+.education-description {
+  color: #555;
+  margin: 0;
+  font-size: 10px;
+}

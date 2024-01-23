@@ -1,0 +1,52 @@
+#item7 {
+  background: white;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.studies-section {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea las tarjetas verticalmente */
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.section-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.study-card {
+  background-color: white;
+  border-left: 5px solid #2bd873; /* Barra lateral como acento */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 150px; /* Ancho fijo para todas las tarjetas */
+  height: 80px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.study-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+.study-title {
+  font-size: 14px;
+  color: #2a2a2a;
+}
+
+.study-institution {
+  font-size: 12px;
+  color: #555;
+}
