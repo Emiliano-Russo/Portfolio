@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+$grid-columns: 4;
+$grid-columns-mobile: 1;
 
 * {
   font-family: "Roboto", sans-serif;
@@ -33,7 +35,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat($grid-columns, 1fr);
   grid-auto-rows: 300px;
   gap: 20px;
 }
@@ -128,4 +130,40 @@ body {
 .topToBottom {
   opacity: 0;
   animation: topToBottomAnim 1.5s ease forwards;
+}
+
+@media (orientation: portrait) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat($grid-columns-mobile, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    border: 2px solid black;
+  }
+
+  #item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  #item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+    background: white;
+  }
+
+  #item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }

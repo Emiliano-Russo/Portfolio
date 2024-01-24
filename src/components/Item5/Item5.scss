@@ -60,3 +60,16 @@
   margin-bottom: 20px; /* Espacio debajo del título */
   padding-left: 20px; /* Espaciado a la izquierda para alinearlo con las tarjetas */
 }
+
+@media (orientation: portrait) {
+  #item5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+
+  .job-title {
+    font-size: 15px;
+  }
+}

@@ -36,3 +36,13 @@
   width: 100%; /* Ajusta la imagen al 100% de la anchura del contenedor */
   height: 100%; /* Ajusta la imagen al 100% de la altura del contenedor */
 }
+
+@media (orientation: portrait) {
+  #item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+}
