@@ -10,6 +10,7 @@ import { Item5 } from "./components/Item5/Item5";
 import { Item6 } from "./components/Item6/Item6";
 import { Item7 } from "./components/Item7/Item7";
 import { Item8 } from "./components/Item8/Item8";
+import { Item9 } from "./components/Item9/Item9";
 
 function App() {
   const ref = useRef(null);
@@ -50,6 +51,7 @@ function App() {
       <Item6 ref={ref} />
       <Item7 ref={ref} />
       <Item8 ref={ref} />
+      <Item9 ref={ref} />
     </div>
   );
 }

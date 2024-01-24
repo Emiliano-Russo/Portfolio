@@ -1,9 +1,9 @@
-#item8 {
-  background: linear-gradient(to bottom right, #ffa500, #ff7f00);
+#item9 {
+  background: linear-gradient(to bottom right, #7a3a96, #4b14c2);
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@
 
   .project-logo {
     width: auto; // Ajusta automáticamente el ancho manteniendo las proporciones
-    max-width: 30%; // Asegura que el logo no exceda el ancho del contenedor
+    max-width: 50%; // Asegura que el logo no exceda el ancho del contenedor
     max-height: 150px; // Establece una altura máxima para el logo
     margin-bottom: 20px;
     object-fit: contain; // Asegura que todo el logo sea visible
@@ -41,7 +41,7 @@
 
   .download-button {
     background-color: #fff;
-    color: #ff7f00;
+    color: #4b14c2;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
