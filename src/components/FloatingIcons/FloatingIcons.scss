@@ -1,0 +1,13 @@
+//floating
+.icon-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon-container img {
+  // animation: float 10s linear infinite;
+  margin: 10px;
+}

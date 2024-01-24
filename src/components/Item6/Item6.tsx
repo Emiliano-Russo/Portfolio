@@ -1,5 +1,6 @@
 // En tu archivo Item6.tsx
 import React, { ForwardedRef } from "react";
+import "./Item6.scss";
 
 const hobbies = require("../../assets/Hobbies.png");
 

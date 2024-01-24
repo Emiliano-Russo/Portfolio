@@ -69,110 +69,11 @@ body {
   background: white;
 }
 
-#item3 {
-  background: white;
-  grid-column-start: 4;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  h1 {
-    font-weight: bolder;
-  }
-
-  p {
-    margin: 0px;
-    font-weight: 100;
-  }
-}
-
-#item4 {
-  background: white;
-  grid-column-start: 2;
-  grid-row-start: 2;
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  align-items: center; /* Centrar los elementos horizontalmente */
-  justify-content: center;
-}
-
-#item4 h2 {
-  margin-bottom: 20px; /* Espacio debajo del título */
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center; /* Centra los íconos horizontalmente */
-  gap: 20px; /* Espacio entre los íconos */
-}
-
-.social-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px; /* Ancho del ícono */
-  height: 50px; /* Altura del ícono */
-  transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
-}
-
-.social-icon img {
-  width: 100%; /* Ajusta la imagen al 100% de la anchura del contenedor */
-  height: 100%; /* Ajusta la imagen al 100% de la altura del contenedor */
-}
-
 .section-title {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
   padding-left: 20px;
-}
-
-#item6 {
-  background: white;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  position: relative;
-  overflow: hidden; // Evita que los contenidos se desborden
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-
-  h1 {
-    color: transparent;
-    background: linear-gradient(to right, #403f37, #6ac8ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 28px;
-  }
-
-  img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    bottom: 0;
-  }
-}
-
-//floating
-.icon-container {
-  display: flex;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.icon-container img {
-  // animation: float 10s linear infinite;
-  margin: 10px;
 }
 
 @keyframes float {

@@ -1,0 +1,29 @@
+#item6 {
+  background: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  overflow: hidden; // Evita que los contenidos se desborden
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  h1 {
+    color: transparent;
+    background: linear-gradient(to right, #403f37, #6ac8ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 28px;
+  }
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
+  }
+}
