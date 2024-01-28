@@ -1,3 +1,5 @@
+import "./Item3.scss";
+
 export const Item3 = () => {
   return (
     <div id="item3" className="grid-item rightToLeft">
