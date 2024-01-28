@@ -16,7 +16,7 @@ export const Item8 = React.forwardRef<HTMLDivElement, Item8Props>((props, ref) =
         <img src={agenda_facil_3} />
       </div>
       <p className="project-description">
-        the ultimate solution to schedule and manage your appointments and events with ease. Forget the stress and let
+        The ultimate solution to schedule and manage your appointments and events with ease. Forget the stress and let
         us help you organize your day to day life.
         {/* Agrega más texto según sea necesario */}
       </p>

@@ -51,7 +51,7 @@ function App() {
       <Item6 ref={ref} />
       <Item7 ref={ref} />
       <Item8 ref={ref} />
-      {/* <Item9 ref={ref} /> */}
+      <Item9 ref={ref} />
     </div>
   );
 }
