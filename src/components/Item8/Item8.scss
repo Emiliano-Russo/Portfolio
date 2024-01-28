@@ -58,3 +58,31 @@
     // Estilos para las capturas de pantalla
   }
 }
+
+@media (orientation: portrait) {
+  #item8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 13;
+    grid-row-end: 16;
+
+    .project-logo {
+      max-width: 200px;
+      margin-bottom: 0px;
+    }
+
+    .screenshots {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+
+      img {
+        width: 70px;
+        height: 170px;
+        margin: 5px;
+        object-fit: fill;
+      }
+    }
+  }
+}
