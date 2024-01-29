@@ -43,7 +43,7 @@ export const FloatingIconsMobile = (props: Props) => {
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
-          marginTop: "30px",
+          marginTop: "20px",
           width: "80%",
           justifyContent: "center",
         }}
