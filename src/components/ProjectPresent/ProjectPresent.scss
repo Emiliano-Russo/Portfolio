@@ -1,0 +1,63 @@
+.project-logo {
+  margin-bottom: 20px;
+}
+
+.screenshots {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  img {
+    width: auto; // Ajusta automáticamente el ancho manteniendo las proporciones
+    max-height: 280px; // Establece una altura máxima
+    margin-bottom: 20px;
+    object-fit: contain; // Asegura que todo el logo sea visible
+    border-radius: 10px;
+  }
+}
+
+.project-description {
+  color: #fff;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.download-button {
+  background-color: #fff;
+  color: #ff7f00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+}
+
+.screenshots-container {
+  // Estilos para las capturas de pantalla
+}
+
+@media (orientation: portrait) {
+  .project-logo {
+    max-width: 200px;
+    margin-bottom: 0px;
+  }
+
+  .screenshots {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    width: 100%;
+
+    img {
+      width: 112px;
+      height: 200px;
+      margin: 5px;
+      object-fit: fill;
+    }
+  }
+}

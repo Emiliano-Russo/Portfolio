@@ -41,6 +41,8 @@ function App() {
     };
   }, []);
 
+  console.log("APP ref: ", ref);
+
   return (
     <div className="grid-container">
       <Item1 />
