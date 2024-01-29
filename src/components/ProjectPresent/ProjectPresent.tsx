@@ -9,6 +9,7 @@ interface Position {
 }
 
 interface ProjectPresent {
+  background: string;
   logo: string;
   image1: string;
   image2: string;
@@ -16,13 +17,18 @@ interface ProjectPresent {
   description: string;
   linkOpen: string;
   position: Position;
+  hoverColor: string;
+  ref: React.MutableRefObject<null>;
 }
 
 export const ProjectPresent = React.forwardRef<HTMLDivElement, ProjectPresent>((props, ref) => {
+  console.log("reference project present: ", props.ref);
   return (
     <div
+      className="grid-item"
+      ref={props.ref}
       style={{
-        background: "linear-gradient(to bottom right, #ffa500, #ff7f00)",
+        background: props.background,
         gridColumnStart: props.position.gridColumnStart,
         gridColumnEnd: props.position.gridColumnEnd,
         gridRowStart: props.position.gridRowStart,
@@ -35,7 +41,11 @@ export const ProjectPresent = React.forwardRef<HTMLDivElement, ProjectPresent>((
         textAlign: "center",
       }}
     >
-      <img src={props.logo} className="project-logo" />
+      <img
+        style={{ maxHeight: "140px", maxWidth: "250px", objectFit: "contain" }}
+        src={props.logo}
+        className="project-logo"
+      />
       <div className="screenshots">
         <img src={props.image1} />
         <img src={props.image2} />
@@ -43,6 +53,7 @@ export const ProjectPresent = React.forwardRef<HTMLDivElement, ProjectPresent>((
       </div>
       <p className="project-description">{props.description}</p>
       <button
+        style={{ color: props.hoverColor }}
         className="download-button"
         onClick={() => {
           window.open(props.linkOpen, "_blank", "noopener,noreferrer");
