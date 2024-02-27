@@ -1,0 +1,35 @@
+#item8Title {
+  background: white;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1; /* Asegúrate de que el título sea visible */
+}
+
+#item8Title h2 {
+  color: #333; /* Color del texto para mejorar la visibilidad */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Hacer el texto más grueso */
+  margin: 0; /* Remover los márgenes por defecto */
+  padding: 20px 0; /* Espacio arriba y abajo para darle aire */
+  text-align: center; /* Alineación del texto */
+  text-transform: uppercase; /* Opcional: transformar el texto a mayúsculas para darle un aspecto más formal */
+  letter-spacing: 1.5px; /* Espacio entre letras para mejorar la legibilidad */
+}
+
+@media (orientation: portrait) {
+  #item8Title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 13;
+    grid-row-end: 14;
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+}

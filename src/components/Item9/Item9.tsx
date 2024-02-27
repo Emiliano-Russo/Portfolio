@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ProjectPresent } from "../ProjectPresent/ProjectPresent";
-const logo = require("../../assets/official-logo-white.png");
-const urban_tales_1 = require("../../assets/urban-tales-1.jpg");
-const urban_tales_2 = require("../../assets/urban-tales-2.jpg");
-const urban_tales_3 = require("../../assets/urban-tales-3.jpg");
+const logo = require("../../assets/urbanTales/official-logo-white.png");
+const urban_tales_1 = require("../../assets/urbanTales/urban-tales-1.jpg");
+const urban_tales_2 = require("../../assets/urbanTales/urban-tales-2.jpg");
+const urban_tales_3 = require("../../assets/urbanTales/urban-tales-3.jpg");
 
 interface Item9Props {}
 
@@ -33,9 +33,9 @@ export const Item9 = React.forwardRef<HTMLDivElement, Item9Props>((props, ref) =
       logo={logo}
       position={{
         gridColumnStart: 1,
-        gridColumnEnd: isMobile ? 2 : 5,
-        gridRowStart: isMobile ? 16 : 7,
-        gridRowEnd: isMobile ? 19 : 9,
+        gridColumnEnd: isMobile ? 2 : 6,
+        gridRowStart: isMobile ? 14 : 6,
+        gridRowEnd: isMobile ? 16 : 8,
       }}
     />
   );
