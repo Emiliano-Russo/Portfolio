@@ -61,8 +61,10 @@ body {
 #item1 {
   grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 3;
-  background: "red";
+  grid-row-end: 2;
+  background: white;
+  text-align: center;
+  align-items: center;
 }
 
 #item2 {
