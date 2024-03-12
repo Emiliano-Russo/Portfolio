@@ -9,8 +9,10 @@ import { Item4 } from "./components/Item4/Item4";
 import { Item5 } from "./components/Item5/Item5";
 import { Item6 } from "./components/Item6/Item6";
 import { Item7 } from "./components/Item7/Item7";
-import { Item8 } from "./components/Item8/Item8";
+import { Item8Title } from "./components/Item8/Item8Title";
 import { Item9 } from "./components/Item9/Item9";
+import { Item10 } from "./components/Item10/Item10";
+import { Item11 } from "./components/Item11/Item11";
 
 function App() {
   const ref = useRef(null);
@@ -52,8 +54,10 @@ function App() {
       <Item5 ref={ref} />
       <Item6 ref={ref} />
       <Item7 ref={ref} />
-      <Item8 ref={ref} />
+      <Item8Title ref={ref} />
       <Item9 ref={ref} />
+      <Item10 ref={ref} />
+      <Item11 ref={ref} />
     </div>
   );
 }
