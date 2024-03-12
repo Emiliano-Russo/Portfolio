@@ -4,8 +4,7 @@
   grid-column-end: 3;
   grid-row-start: 2;
   display: flex;
-  padding: 20px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; /* Centrar los elementos horizontalmente */
   justify-content: center;
 }
@@ -14,28 +13,39 @@
   margin-bottom: 20px; /* Espacio debajo del título */
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center; /* Centra los íconos horizontalmente */
-  gap: 20px; /* Espacio entre los íconos */
-}
-
-.social-icon {
+.quadrant {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px; /* Ancho del ícono */
-  height: 50px; /* Altura del ícono */
-  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out; /* Transición más rápida al disminuir */
+  text-align: center;
 }
 
-.social-icon:hover {
-  transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+.quadrant-content {
+  transition: transform 0.1s ease-out; /* Transición más rápida para el contenido */
+  transform: scale(1); /* Asegura que el contenido no se transforme */
 }
 
-.social-icon img {
-  width: 100%; /* Ajusta la imagen al 100% de la anchura del contenedor */
-  height: 100%; /* Ajusta la imagen al 100% de la altura del contenedor */
+.quadrant:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-out; /* Transición más lenta al aumentar */
+}
+
+.quadrant:hover .quadrant-content {
+  transform: scale(1); /* Mantiene el contenido sin escalar, incluso cuando el cuadrante se agranda */
+}
+
+.quadrant-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.quadrant-link:hover {
+  color: #ccc;
 }
 
 @media (orientation: portrait) {
