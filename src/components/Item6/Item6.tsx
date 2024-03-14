@@ -1,12 +1,11 @@
-// En tu archivo Item6.tsx
-import React, { ForwardedRef, useEffect, useState } from "react";
+// Item6.tsx
+import React, { useEffect, useState } from "react";
 import "./Item6.scss";
 
-const hobbies = require("../../assets/Hobbies.png");
-const hobbiesMobile = require("../../assets/Hobbies-Mobile.png");
+const football = require("../../assets/hobbies/football.jpg");
+const book = require("../../assets/hobbies/book.jpg");
+const photography = require("../../assets/hobbies/photography.jpg");
 
-// Define las props si las necesitas. En este ejemplo, no hay props adicionales,
-// por lo que se usa un objeto vacío.
 interface Item6Props {}
 
 export const Item6 = React.forwardRef<HTMLDivElement, Item6Props>((props, ref) => {
@@ -25,8 +24,18 @@ export const Item6 = React.forwardRef<HTMLDivElement, Item6Props>((props, ref) =
 
   return (
     <div ref={ref} id="item6" className="grid-item">
-      <h1>Hobbies</h1>
-      <img src={isMobile ? hobbiesMobile : hobbies} />
+      <div id="Hobbies">
+        <h2>Hobbies</h2>
+      </div>
+      <div style={{ background: "blue" }} className="quadranty">
+        <img src={football} />
+      </div>
+      <div style={{ background: "orange" }} className="quadranty">
+        <img src={book} />
+      </div>
+      <div style={{ background: "red" }} className="quadranty">
+        <img src={photography} />
+      </div>
     </div>
   );
 });

@@ -27,6 +27,7 @@ export const Item8 = React.forwardRef<HTMLDivElement, Item8Props>((props, ref) =
 
   return (
     <ProjectPresent
+      idProject="agenda facil"
       background="linear-gradient(to bottom right, #ffa500, #ff7f00)"
       hoverColor="#ff7f00"
       ref={props.ref}

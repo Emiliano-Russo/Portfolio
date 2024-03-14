@@ -9,6 +9,7 @@ interface Position {
 }
 
 interface ProjectPresent {
+  idProject: string;
   background: string;
   logo: string;
   image1: string;
@@ -25,6 +26,7 @@ export const ProjectPresent = React.forwardRef<HTMLDivElement, ProjectPresent>((
   console.log("reference project present: ", props.ref);
   return (
     <div
+      id={props.idProject}
       className="grid-item"
       ref={props.ref}
       style={{
