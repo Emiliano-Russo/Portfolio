@@ -18,7 +18,7 @@ export const Item4 = () => {
           </a>
         </div>
       </div>
-      <div className="quadrant" style={{ background: "#E4A9FE" }}>
+      <div className="quadrant" style={{ background: "rgb(199,87,248)" }}>
         <div className="quadrant-content">
           <a
             href="https://github.com/Emiliano-Russo"

@@ -27,13 +27,13 @@ export const Item6 = React.forwardRef<HTMLDivElement, Item6Props>((props, ref) =
       <div id="Hobbies">
         <h2>Hobbies</h2>
       </div>
-      <div style={{ background: "blue" }} className="quadrant">
+      <div style={{ background: "blue" }} className="quadranty">
         <img src={football} />
       </div>
-      <div style={{ background: "orange" }} className="quadrant">
+      <div style={{ background: "orange" }} className="quadranty">
         <img src={book} />
       </div>
-      <div style={{ background: "red" }} className="quadrant">
+      <div style={{ background: "red" }} className="quadranty">
         <img src={photography} />
       </div>
     </div>

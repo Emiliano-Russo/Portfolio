@@ -23,6 +23,7 @@ export const Item11 = React.forwardRef<HTMLDivElement, Item11Props>((props, ref)
 
   return (
     <ProjectPresent
+      idProject="till"
       background="linear-gradient(to bottom right, #27D0AB, #574FF0)"
       hoverColor="#574FF0"
       description="With Till’s fee-free app and debit card, kids can develop money habits that prepare them for the real world."

@@ -23,6 +23,7 @@ export const Item9 = React.forwardRef<HTMLDivElement, Item9Props>((props, ref) =
 
   return (
     <ProjectPresent
+      idProject="urban tales"
       background="linear-gradient(to bottom right, #7a3a96, #4b14c2)"
       hoverColor="#4b14c2"
       description="Step into Urban Tales, where every corner tells a unique story, unveiling mysteries and legends."

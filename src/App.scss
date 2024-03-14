@@ -134,6 +134,13 @@ body {
   animation: topToBottomAnim 1.5s ease forwards;
 }
 
+#till {
+  .project-logo {
+    max-height: 100px !important;
+    padding-bottom: 10px;
+  }
+}
+
 @media (orientation: portrait) {
   .grid-container {
     display: grid;

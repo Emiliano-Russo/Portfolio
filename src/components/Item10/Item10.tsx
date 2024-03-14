@@ -23,6 +23,7 @@ export const Item10 = React.forwardRef<HTMLDivElement, Item10Props>((props, ref)
 
   return (
     <ProjectPresent
+      idProject="casmu"
       background="linear-gradient(to bottom right, #ffffff, #ff0000)"
       hoverColor="#ff0000"
       description="The app enables appointment scheduling, medical history access, video consultations, medication delivery, and more."
